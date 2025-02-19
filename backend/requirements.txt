@@ -1,0 +1,28 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+openai>=1.30.0
+anthropic>=0.28.0
+chromadb>=0.5.0
+pymupdf>=1.24.0
+pytesseract>=0.3.10
+Pillow>=10.3.0
+rank-bm25>=0.2.2
+sentence-transformers>=3.0.0
+langchain>=0.2.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.1
+redis>=5.0.4
+sqlalchemy>=2.0.30
+numpy>=1.26.0
+ruff>=0.4.0
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0
+html2text>=2024.2.26
+websockets>=12.0
+# Optional — gracefully skipped if absent:
+# openai-whisper      (local audio transcription)
+# moviepy             (video audio extraction)
+# tree-sitter         (advanced AST parsing)
