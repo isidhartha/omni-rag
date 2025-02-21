@@ -1,8 +1,10 @@
-"""Document summarizer using OpenAI or Anthropic with graceful fallback."""
+"""Document summarizer using OpenAI, Ollama, or Anthropic with graceful fallback."""
 from __future__ import annotations
 
 import logging
 from typing import Optional
+
+from backend.llm_service import LLM_PROVIDER, complete as llm_complete
 
 logger = logging.getLogger("omnirag.summarizer")
 
@@ -55,12 +57,14 @@ class Summarizer:
 
     def _generate(self, prompt: str, max_tokens: int) -> str:
         """Route to available LLM backend."""
+        if LLM_PROVIDER == "ollama":
+            return llm_complete(prompt, max_tokens=max_tokens)
         if self._openai:
             return self._openai_generate(prompt, max_tokens)
         if self._anthropic:
             return self._anthropic_generate(prompt, max_tokens)
         logger.warning("No LLM backend configured — returning stub answer.")
-        return "[LLM not configured: please set OPENAI_API_KEY or ANTHROPIC_API_KEY]"
+        return "[LLM not configured: please set OPENAI_API_KEY, ANTHROPIC_API_KEY, or LLM_PROVIDER=ollama]"
 
     def _openai_generate(self, prompt: str, max_tokens: int) -> str:
         from backend.shared.config import get_settings

@@ -73,6 +73,7 @@ services:
       - CHROMA_PORT=8000
       - REDIS_URL=redis://redis:6379
       - DATABASE_URL=postgresql://omnirag:password@postgres:5432/omnirag
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://localhost:11434}
     depends_on:
       chromadb:
         condition: service_healthy
@@ -107,8 +108,20 @@ services:
       - backend
     restart: unless-stopped
 
+  # ---------------------------------------------------------------------------
+  # Ollama — optional free local LLM (uncomment to run Ollama in Docker)
+  # Set LLM_PROVIDER=ollama and OLLAMA_BASE_URL=http://ollama:11434 in .env
+  # ---------------------------------------------------------------------------
+  # ollama:
+  #   image: ollama/ollama
+  #   ports:
+  #     - "11434:11434"
+  #   volumes:
+  #     - ollama_data:/root/.ollama
+
 volumes:
   chromadb_data:
   redis_data:
   postgres_data:
   upload_data:
+  # ollama_data:

@@ -29,6 +29,7 @@ from fastapi.responses import JSONResponse, StreamingResponse
 
 from backend.shared.config import get_settings
 from backend.shared.logging import configure_logging
+from backend.llm_service import LLM_PROVIDER, chat as llm_chat
 from backend.shared.models import (
     Citation,
     DocumentRecord,
@@ -533,8 +534,13 @@ async def websocket_chat(websocket: WebSocket):
                 for r in results
             ]
 
-            # Stream answer token by token if OpenAI available
-            if _openai_client:
+            # Stream answer token by token if OpenAI available; fall back to llm_service
+            if LLM_PROVIDER == "ollama":
+                answer = _summarizer.answer_with_context(
+                    question=question, context_chunks=context_chunks
+                )
+                await websocket.send_json({"type": "answer_chunk", "content": answer})
+            elif _openai_client:
                 answer = await _stream_openai_response(
                     websocket, question, context_chunks, conversation_id
                 )
