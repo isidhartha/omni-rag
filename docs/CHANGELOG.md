@@ -13,3 +13,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-21] timeout tuning
 [2026-02-22] rough draft
 [2026-02-22] source citation format
+[2026-02-22] improved test assertions
