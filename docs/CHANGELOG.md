@@ -28,3 +28,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-26] graceful degradation
 [2026-02-26] improve readability
 [2026-02-26] text overlap handling
+[2026-02-26] image ocr improvement
