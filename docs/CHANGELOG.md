@@ -34,3 +34,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-26] cleanup
 [2026-02-27] document metadata extraction
 [2026-02-27] chore: standardize naming
+[2026-02-27] chore: remove unused imports
