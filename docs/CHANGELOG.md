@@ -47,3 +47,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-02] style: consistent indentation
 [2026-03-02] polish
 [2026-03-02] chore: update license year
+[2026-03-02] graceful shutdown
