@@ -57,3 +57,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-06] better variable names
 [2026-03-08] refactor: extract constants
 [2026-03-08] whitespace fix
+[2026-03-08] code review fixes
