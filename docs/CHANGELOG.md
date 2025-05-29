@@ -60,3 +60,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-08] code review fixes
 [2026-03-08] rag pipeline logging
 [2026-03-08] docs: update changelog
+[2026-03-08] hotfix: bad default config
