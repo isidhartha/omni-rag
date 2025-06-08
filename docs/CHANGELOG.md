@@ -62,3 +62,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-08] docs: update changelog
 [2026-03-08] hotfix: bad default config
 [2026-03-08] cleaned up util functions
+[2026-03-08] merge fixes
