@@ -72,3 +72,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-10] regression test added
 [2026-03-11] test: fix flaky test
 [2026-03-11] embedding fallback to local
+[2026-03-13] test: add basic unit tests
