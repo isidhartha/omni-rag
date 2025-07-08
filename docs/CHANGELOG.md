@@ -89,3 +89,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-18] removed magic numbers
 [2026-03-18] readme improvements
 [2026-03-18] response synthesis quality
+[2026-03-18] mocked external dependencies
