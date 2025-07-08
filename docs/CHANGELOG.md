@@ -87,3 +87,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-16] refactor: simplify logic
 [2026-03-18] documentation cleanup
 [2026-03-18] removed magic numbers
+[2026-03-18] readme improvements
