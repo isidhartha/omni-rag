@@ -93,3 +93,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-18] added code examples to docs
 [2026-03-19] reranker model loading
 [2026-03-19] fixed broken link in readme
+[2026-03-19] cleanup and formatting
