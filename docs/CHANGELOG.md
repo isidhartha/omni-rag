@@ -96,3 +96,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-19] cleanup and formatting
 [2026-03-22] fixed wrong import path
 [2026-03-22] api docs update
+[2026-03-22] docs: docker setup clarification
