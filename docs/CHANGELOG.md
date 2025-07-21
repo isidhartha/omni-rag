@@ -102,3 +102,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-22] null safety improvement
 [2026-03-24] formatting cleanup
 [2026-03-24] better concurrency
+[2026-03-24] docs: api reference update
