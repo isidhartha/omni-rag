@@ -100,3 +100,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-22] test: more edge cases
 [2026-03-22] added some tests
 [2026-03-22] null safety improvement
+[2026-03-24] formatting cleanup
