@@ -112,3 +112,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-26] this should do it
 [2026-03-26] fixed typo in comment
 [2026-03-26] web scraper timeout
+[2026-03-26] more test coverage
