@@ -110,3 +110,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-25] chunk size configuration
 [2026-03-26] minor refactor
 [2026-03-26] this should do it
+[2026-03-26] fixed typo in comment
