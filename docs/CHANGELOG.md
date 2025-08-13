@@ -116,3 +116,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-27] renamed for clarity
 [2026-03-27] retry logic improved
 [2026-03-27] better getting started guide
+[2026-03-27] fix: timeout too short
