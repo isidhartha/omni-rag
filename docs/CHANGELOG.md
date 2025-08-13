@@ -114,3 +114,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-26] web scraper timeout
 [2026-03-26] more test coverage
 [2026-03-27] renamed for clarity
+[2026-03-27] retry logic improved
