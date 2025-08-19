@@ -126,3 +126,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-29] updated readme
 [2026-03-29] moved to config
 [2026-03-29] query optimization
+[2026-03-30] fixed pagination edge case
