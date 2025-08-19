@@ -128,3 +128,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-29] query optimization
 [2026-03-30] fixed pagination edge case
 [2026-03-30] final touches
+[2026-03-31] consolidate duplicate logic
