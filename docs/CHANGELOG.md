@@ -130,3 +130,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-30] final touches
 [2026-03-31] consolidate duplicate logic
 [2026-03-31] removed dead code
+[2026-03-31] test: improve mock setup
