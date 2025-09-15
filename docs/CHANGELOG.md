@@ -141,3 +141,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-01] improved test reliability
 [2026-04-01] hybrid search result merging
 [2026-04-03] fix: off by one
+[2026-04-03] better memory usage
