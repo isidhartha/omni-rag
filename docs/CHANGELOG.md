@@ -154,3 +154,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-06] output sanitization
 [2026-04-07] fix: wrong status code
 [2026-04-07] document deduplication
+[2026-04-07] linting fixes
