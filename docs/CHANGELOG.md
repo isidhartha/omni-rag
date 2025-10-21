@@ -170,3 +170,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-10] ingest retry logic
 [2026-04-11] docs: clearer setup instructions
 [2026-04-11] back to simpler approach
+[2026-04-11] stricter validation
