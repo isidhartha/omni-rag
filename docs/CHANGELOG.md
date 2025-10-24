@@ -177,3 +177,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-14] test cleanup
 [2026-04-14] better separation of concerns
 [2026-04-14] bm25 index rebuild on ingest
+[2026-04-14] filter improvement
