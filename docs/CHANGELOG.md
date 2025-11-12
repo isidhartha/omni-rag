@@ -184,3 +184,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-15] working on it
 [2026-04-15] cache ttl adjustment
 [2026-04-15] refactor: consolidate error handling
+[2026-04-15] audio transcription alignment
