@@ -207,3 +207,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-21] fix: lint errors
 [2026-04-22] chore: remove debug logs
 [2026-04-22] ast parsing error handling
+[2026-04-22] optimized hot path
