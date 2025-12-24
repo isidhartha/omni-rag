@@ -210,3 +210,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-22] optimized hot path
 [2026-04-22] fix: bad import path
 [2026-04-22] better type handling
+[2026-04-22] fixed error propagation
