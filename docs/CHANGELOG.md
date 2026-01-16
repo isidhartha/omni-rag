@@ -218,3 +218,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-23] request validation
 [2026-04-23] refactor: split into smaller functions
 [2026-04-23] chore: cleanup old scripts
+[2026-04-25] citation extraction fix
