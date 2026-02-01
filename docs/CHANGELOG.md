@@ -227,3 +227,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-26] perf: lazy initialization
 [2026-04-26] cleaned up config
 [2026-04-26] signal handling
+[2026-04-26] fixed failing test
