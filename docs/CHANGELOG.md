@@ -238,3 +238,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-29] fix: log level override not working
 [2026-04-29] fixed that null crash
 [2026-04-29] search result ranking
+[2026-04-29] added troubleshooting section
