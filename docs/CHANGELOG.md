@@ -241,3 +241,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-29] added troubleshooting section
 [2026-04-29] fix: connection not closing properly
 [2026-04-30] header cleanup
+[2026-04-30] fix: missing return statement
