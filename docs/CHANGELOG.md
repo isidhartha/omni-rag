@@ -19,3 +19,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-23] docs: note about environment variables
 [2026-02-23] chromadb connection pooling
 [2026-02-23] named the constants
+[2026-02-23] fixed timeout handling
