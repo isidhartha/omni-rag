@@ -22,3 +22,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-23] fixed timeout handling
 [2026-02-23] minor cleanup
 [2026-02-24] similarity threshold tuning
+[2026-02-24] resource limits
