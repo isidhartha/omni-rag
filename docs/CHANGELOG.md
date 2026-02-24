@@ -23,3 +23,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-23] minor cleanup
 [2026-02-24] similarity threshold tuning
 [2026-02-24] resource limits
+[2026-02-24] chore: remove dead code
