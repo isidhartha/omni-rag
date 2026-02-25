@@ -247,3 +247,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-02] rough draft
 [2026-05-02] source citation format
 [2026-05-02] improved test assertions
+[2026-05-02] updated setup docs
