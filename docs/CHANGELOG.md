@@ -249,3 +249,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-02] improved test assertions
 [2026-05-02] updated setup docs
 [2026-05-02] faster startup
+[2026-05-03] docs: note about environment variables
