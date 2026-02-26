@@ -254,3 +254,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-04] named the constants
 [2026-05-04] fixed timeout handling
 [2026-05-04] minor cleanup
+[2026-05-04] similarity threshold tuning
