@@ -37,3 +37,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-27] chore: remove unused imports
 [2026-02-27] reverted bad change
 [2026-02-28] readme cleanup
+[2026-02-28] removed old commented code
