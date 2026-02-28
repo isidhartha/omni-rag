@@ -40,3 +40,4 @@ Running log of changes. Most recent at the bottom.
 [2026-02-28] removed old commented code
 [2026-02-28] test: better assertions
 [2026-02-28] cors fix
+[2026-02-28] fixed edge case in prod
