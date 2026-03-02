@@ -44,3 +44,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-01] fixed outdated instructions
 [2026-03-01] minor tweaks
 [2026-03-01] fix: typo in error message
+[2026-03-02] style: consistent indentation
