@@ -49,3 +49,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-02] chore: update license year
 [2026-03-02] graceful shutdown
 [2026-03-04] got it working
+[2026-03-04] reduced unnecessary work
