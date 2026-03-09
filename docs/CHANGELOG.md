@@ -65,3 +65,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-08] merge fixes
 [2026-03-08] finishing up
 [2026-03-09] hotfix: null dereference
+[2026-03-09] it works now
