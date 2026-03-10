@@ -68,3 +68,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-09] it works now
 [2026-03-09] code cleanup
 [2026-03-10] fix: config values not loading
+[2026-03-10] streaming response fix
