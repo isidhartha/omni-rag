@@ -262,3 +262,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-05] improve readability
 [2026-05-06] text overlap handling
 [2026-05-06] image ocr improvement
+[2026-05-06] progress
