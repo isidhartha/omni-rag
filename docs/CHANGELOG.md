@@ -85,3 +85,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-16] removed unused dependencies
 [2026-03-16] connection pool sizing
 [2026-03-16] refactor: simplify logic
+[2026-03-18] documentation cleanup
