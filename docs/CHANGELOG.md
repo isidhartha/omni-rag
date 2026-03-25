@@ -106,3 +106,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-24] fixed response format issue
 [2026-03-24] guard clause cleanup
 [2026-03-24] almost there
+[2026-03-25] cache invalidation fix
