@@ -120,3 +120,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-27] addressed feedback
 [2026-03-28] fix: encoding issue in response
 [2026-03-28] version bump
+[2026-03-29] startup time improvement
