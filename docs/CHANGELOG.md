@@ -123,3 +123,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-29] startup time improvement
 [2026-03-29] trying a different approach
 [2026-03-29] fix: memory not released on shutdown
+[2026-03-29] updated readme
