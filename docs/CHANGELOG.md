@@ -135,3 +135,4 @@ Running log of changes. Most recent at the bottom.
 [2026-03-31] tweaks
 [2026-03-31] fixed missing null checks
 [2026-03-31] fix: response shape mismatch
+[2026-03-31] alternative approach
