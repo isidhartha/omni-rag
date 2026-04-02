@@ -269,3 +269,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-07] chore: standardize naming
 [2026-05-08] chore: remove unused imports
 [2026-05-08] reverted bad change
+[2026-05-08] readme cleanup
