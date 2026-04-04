@@ -147,3 +147,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-03] fix: environment variable parsing
 [2026-04-03] pdf chunking overlap fix
 [2026-04-04] packages updated
+[2026-04-04] health check endpoint
