@@ -151,3 +151,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-06] docs: fix typo in readme
 [2026-04-06] quick improvement
 [2026-04-06] general cleanup
+[2026-04-06] output sanitization
