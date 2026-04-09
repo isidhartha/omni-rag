@@ -162,3 +162,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-09] perf: cache the result
 [2026-04-09] cleaned up after merge
 [2026-04-09] small improvement
+[2026-04-09] batch processing improvement
