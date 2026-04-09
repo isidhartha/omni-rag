@@ -159,3 +159,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-09] vector store maintenance
 [2026-04-09] fixed the broken test
 [2026-04-09] chore: rename for clarity
+[2026-04-09] perf: cache the result
