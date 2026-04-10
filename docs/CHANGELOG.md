@@ -167,3 +167,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-09] simplified conditional
 [2026-04-10] session handling
 [2026-04-10] pagination cursor fix
+[2026-04-10] ingest retry logic
