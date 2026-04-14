@@ -174,3 +174,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-11] fix: edge case with empty input
 [2026-04-11] cleaned up error handling
 [2026-04-11] chore: gitignore update
+[2026-04-14] test cleanup
