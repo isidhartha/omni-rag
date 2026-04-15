@@ -186,3 +186,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-15] refactor: consolidate error handling
 [2026-04-15] audio transcription alignment
 [2026-04-15] first pass
+[2026-04-15] fix: wrong variable used
