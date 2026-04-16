@@ -187,3 +187,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-15] audio transcription alignment
 [2026-04-15] first pass
 [2026-04-15] fix: wrong variable used
+[2026-04-16] docs: add missing param docs
