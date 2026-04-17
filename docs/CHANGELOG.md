@@ -283,3 +283,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-11] graceful shutdown
 [2026-05-11] got it working
 [2026-05-11] reduced unnecessary work
+[2026-05-12] context window packing
