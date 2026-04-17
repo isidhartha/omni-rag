@@ -190,3 +190,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-16] docs: add missing param docs
 [2026-04-16] dependency cleanup
 [2026-04-16] bump version
+[2026-04-17] clearer docs
