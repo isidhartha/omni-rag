@@ -193,3 +193,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-17] clearer docs
 [2026-04-17] embedding batch size fix
 [2026-04-18] chore: bump package versions
+[2026-04-18] tests passing now
