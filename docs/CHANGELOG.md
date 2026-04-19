@@ -195,3 +195,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-18] chore: bump package versions
 [2026-04-18] tests passing now
 [2026-04-19] conversation memory pruning
+[2026-04-19] docs: installation steps update
