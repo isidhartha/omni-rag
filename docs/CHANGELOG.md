@@ -198,3 +198,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-19] docs: installation steps update
 [2026-04-19] updated env example file
 [2026-04-20] fix: null check was missing
+[2026-04-20] test fixtures update
