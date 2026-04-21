@@ -201,3 +201,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-20] test fixtures update
 [2026-04-20] fix: broken unit test
 [2026-04-20] docs: better examples
+[2026-04-21] docker build fix
