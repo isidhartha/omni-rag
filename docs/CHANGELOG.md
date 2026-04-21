@@ -204,3 +204,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-21] docker build fix
 [2026-04-21] improved api documentation
 [2026-04-21] early return pattern
+[2026-04-21] fix: lint errors
