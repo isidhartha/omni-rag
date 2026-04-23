@@ -216,3 +216,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-23] expanded architecture notes
 [2026-04-23] self review fixes
 [2026-04-23] request validation
+[2026-04-23] refactor: split into smaller functions
