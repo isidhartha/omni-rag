@@ -212,3 +212,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-22] better type handling
 [2026-04-22] fixed error propagation
 [2026-04-22] removed debug prints
+[2026-04-23] squash commits
