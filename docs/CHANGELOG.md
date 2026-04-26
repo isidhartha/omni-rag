@@ -293,3 +293,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-13] code review fixes
 [2026-05-13] rag pipeline logging
 [2026-05-13] docs: update changelog
+[2026-05-13] hotfix: bad default config
