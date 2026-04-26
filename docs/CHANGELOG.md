@@ -228,3 +228,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-26] cleaned up config
 [2026-04-26] signal handling
 [2026-04-26] fixed failing test
+[2026-04-26] quick fix for prod issue
