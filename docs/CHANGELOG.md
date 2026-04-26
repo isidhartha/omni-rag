@@ -223,3 +223,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-25] added integration test
 [2026-04-25] docs: update readme
 [2026-04-26] removed unused variables
+[2026-04-26] search ranking tweak
