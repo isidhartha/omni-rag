@@ -230,3 +230,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-26] fixed failing test
 [2026-04-26] quick fix for prod issue
 [2026-04-28] auth token refresh
+[2026-04-28] consistent naming
