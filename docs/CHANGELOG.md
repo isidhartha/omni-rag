@@ -301,3 +301,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-14] it works now
 [2026-05-14] code cleanup
 [2026-05-15] fix: config values not loading
+[2026-05-15] streaming response fix
