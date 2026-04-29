@@ -235,3 +235,4 @@ Running log of changes. Most recent at the bottom.
 [2026-04-28] query preprocessing
 [2026-04-29] fix: incorrect default value
 [2026-04-29] finally fixed that edge case
+[2026-04-29] fix: log level override not working
