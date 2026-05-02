@@ -245,3 +245,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-01] added edge case tests
 [2026-05-01] timeout tuning
 [2026-05-02] rough draft
+[2026-05-02] source citation format
