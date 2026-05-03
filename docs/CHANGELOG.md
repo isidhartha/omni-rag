@@ -304,3 +304,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-15] streaming response fix
 [2026-05-15] regression test added
 [2026-05-15] test: fix flaky test
+[2026-05-15] embedding fallback to local
