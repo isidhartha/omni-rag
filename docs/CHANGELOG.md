@@ -251,3 +251,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-02] faster startup
 [2026-05-03] docs: note about environment variables
 [2026-05-03] chromadb connection pooling
+[2026-05-04] named the constants
