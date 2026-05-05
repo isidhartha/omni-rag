@@ -257,3 +257,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-04] similarity threshold tuning
 [2026-05-04] resource limits
 [2026-05-04] chore: remove dead code
+[2026-05-05] sync with main
