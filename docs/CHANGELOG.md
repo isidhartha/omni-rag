@@ -264,3 +264,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-06] image ocr improvement
 [2026-05-06] progress
 [2026-05-06] style: formatting
+[2026-05-06] cleanup
