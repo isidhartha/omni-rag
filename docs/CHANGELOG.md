@@ -271,3 +271,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-08] reverted bad change
 [2026-05-08] readme cleanup
 [2026-05-08] removed old commented code
+[2026-05-08] test: better assertions
