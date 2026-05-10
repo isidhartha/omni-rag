@@ -275,3 +275,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-08] cors fix
 [2026-05-10] fixed edge case in prod
 [2026-05-10] fixed outdated instructions
+[2026-05-10] minor tweaks
