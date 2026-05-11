@@ -279,3 +279,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-10] fix: typo in error message
 [2026-05-10] style: consistent indentation
 [2026-05-10] polish
+[2026-05-11] chore: update license year
