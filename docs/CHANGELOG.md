@@ -281,3 +281,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-10] polish
 [2026-05-11] chore: update license year
 [2026-05-11] graceful shutdown
+[2026-05-11] got it working
