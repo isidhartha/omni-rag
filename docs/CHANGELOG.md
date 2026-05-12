@@ -286,3 +286,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-12] context window packing
 [2026-05-12] sensible defaults
 [2026-05-12] db index added
+[2026-05-12] input bounds check
