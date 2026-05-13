@@ -291,3 +291,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-12] refactor: extract constants
 [2026-05-12] whitespace fix
 [2026-05-13] code review fixes
+[2026-05-13] rag pipeline logging
