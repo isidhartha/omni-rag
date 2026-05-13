@@ -292,3 +292,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-12] whitespace fix
 [2026-05-13] code review fixes
 [2026-05-13] rag pipeline logging
+[2026-05-13] docs: update changelog
