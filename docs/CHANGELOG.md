@@ -296,3 +296,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-13] hotfix: bad default config
 [2026-05-13] cleaned up util functions
 [2026-05-14] merge fixes
+[2026-05-14] finishing up
