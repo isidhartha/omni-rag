@@ -307,3 +307,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-15] embedding fallback to local
 [2026-05-15] test: add basic unit tests
 [2026-05-15] post merge cleanup
+[2026-05-16] updated changelog
