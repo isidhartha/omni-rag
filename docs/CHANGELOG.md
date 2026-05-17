@@ -315,3 +315,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-17] fixed race condition in handler
 [2026-05-17] async fix
 [2026-05-17] clearer contributing guide
+[2026-05-17] removed unused dependencies
