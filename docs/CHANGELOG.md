@@ -312,3 +312,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-16] chore: update dependencies
 [2026-05-16] cleaned up imports
 [2026-05-17] added missing docs
+[2026-05-17] fixed race condition in handler
