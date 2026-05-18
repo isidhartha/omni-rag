@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OmniRAG — Multimodal RAG Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="rag-bg font-inter h-screen overflow-hidden flex flex-col">
+
+  <!-- Top Bar -->
+  <header class="rag-header flex items-center justify-between px-5 py-3 border-b border-border">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-500 flex items-center justify-center">
+        <i class="fas fa-magnifying-glass text-white text-sm"></i>
+      </div>
+      <span class="font-bold text-lg">Omni<span class="text-indigo-500">RAG</span></span>
+    </div>
+    <div class="flex items-center gap-3">
+      <div id="graphStats" class="hidden md:flex items-center gap-3 text-xs text-muted">
+        <span><i class="fas fa-file-alt text-indigo-400 mr-1"></i><span id="statDocs">0</span> docs</span>
+        <span><i class="fas fa-puzzle-piece text-cyan-400 mr-1"></i><span id="statChunks">0</span> chunks</span>
+      </div>
+      <button onclick="toggleTheme()" class="btn-ghost text-sm px-3 py-1.5 rounded-lg">
+        <i class="fas fa-circle-half-stroke mr-1"></i><span class="hidden sm:inline">Theme</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <div id="heroBanner" class="border-b px-5 py-3" style="border-color:var(--border);background:linear-gradient(90deg,rgba(99,102,241,0.04),rgba(6,182,212,0.04))">
+    <div class="flex items-start justify-between gap-4">
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-sm font-bold" style="color:var(--foreground)">OmniRAG</span>
+          <span class="text-xs px-1.5 py-0.5 rounded" style="background:rgba(99,102,241,0.1);color:#6366f1">Multimodal RAG Engine</span>
+        </div>
+        <p class="text-xs leading-relaxed" style="color:var(--muted);max-width:64rem">Upload PDFs, images, or web pages and instantly query them with AI. OmniRAG builds a semantic knowledge graph over your documents and returns answers with exact source citations — so you always know where the information came from. Supports hybrid search, OCR on images, and real-time streaming responses.</p>
+        <div class="flex flex-wrap gap-1.5 mt-2">
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(99,102,241,0.08);color:#6366f1">📄 PDF · Images · URLs · Text</span>
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(6,182,212,0.08);color:#06b6d4">💬 Streaming Q&amp;A with Citations</span>
+          <span class="text-xs px-2 py-0.5 rounded-full" style="background:rgba(0,0,0,0.04);color:var(--muted)">🔗 Knowledge Graph · Hybrid Search</span>
+        </div>
+      </div>
+      <button onclick="document.getElementById('heroBanner').style.display='none'" class="flex-shrink-0 text-lg leading-none mt-0.5 hover:opacity-70 transition" style="color:var(--muted)" title="Dismiss">×</button>
+    </div>
+  </div>
+
+  <!-- Main 3-panel layout -->
+  <div class="flex-1 flex overflow-hidden">
+
+    <!-- LEFT: Document Library -->
+    <aside class="rag-sidebar w-72 flex flex-col border-r border-border overflow-hidden">
+      <div class="p-4 border-b border-border">
+        <h2 class="text-sm font-semibold mb-3 flex items-center gap-2">
+          <i class="fas fa-books text-indigo-400"></i> Documents
+          <span id="docCount" class="ml-auto text-xs bg-indigo-500/15 text-indigo-400 px-2 py-0.5 rounded-full">0</span>
+        </h2>
+
+        <!-- Upload zone -->
+        <div id="dropZone" class="drop-zone rounded-xl p-4 text-center cursor-pointer mb-3"
+          onclick="document.getElementById('fileInput').click()"
+          ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
+          <i class="fas fa-cloud-upload-alt text-2xl text-indigo-400 mb-2"></i>
+          <div class="text-xs text-muted">Drop files here or click to upload</div>
+          <div class="text-xs text-muted/60 mt-1">PDF · Images · Text</div>
+          <input type="file" id="fileInput" class="hidden" accept=".pdf,.png,.jpg,.jpeg,.txt,.md" onchange="uploadFile(this.files)" />
+        </div>
+
+        <!-- URL ingestion -->
+        <div class="flex gap-2">
+          <input id="urlInput" type="text" placeholder="https://example.com/…" class="rag-input flex-1 text-xs px-3 py-2 rounded-lg" />
+          <button onclick="ingestUrl()" class="btn-primary-sm px-3 py-2 rounded-lg text-xs font-medium">
+            <i class="fas fa-link"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Upload progress -->
+      <div id="uploadProgress" class="hidden px-4 py-2 border-b border-border">
+        <div class="flex justify-between text-xs text-muted mb-1">
+          <span id="uploadFileName">Uploading…</span>
+          <span id="uploadPct">0%</span>
+        </div>
+        <div class="h-1 bg-border rounded-full overflow-hidden">
+          <div id="uploadBar" class="h-full bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-full transition-all" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Document list -->
+      <div id="documentList" class="flex-1 overflow-y-auto p-3 space-y-2">
+        <div class="text-xs text-muted italic text-center pt-4">No documents yet</div>
+      </div>
+    </aside>
+
+    <!-- CENTER: Chat Area -->
+    <main class="flex-1 flex flex-col overflow-hidden">
+      <div id="chatMessages" class="flex-1 overflow-y-auto p-5 space-y-4">
+        <!-- Welcome -->
+        <div class="text-center py-12 text-muted">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-comment-dots text-2xl text-indigo-400"></i>
+          </div>
+          <div class="text-lg font-semibold mb-1">Ask your documents anything</div>
+          <div class="text-sm">Upload files, then ask questions to get AI-powered answers with citations.</div>
+        </div>
+      </div>
+
+      <!-- Input -->
+      <div class="border-t border-border p-4">
+        <div class="flex gap-3 max-w-3xl mx-auto">
+          <div class="flex-1 rag-input-wrap flex items-center gap-2 rounded-xl px-4 py-3">
+            <input id="questionInput" type="text" placeholder="Ask a question about your documents…"
+              class="flex-1 bg-transparent focus:outline-none text-sm"
+              onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendQuestion();}" />
+          </div>
+          <button onclick="sendQuestion()" id="sendBtn" class="btn-primary px-5 py-3 rounded-xl text-sm font-medium flex items-center gap-2">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+        <div class="text-center text-xs text-muted/50 mt-2">
+          <span id="wsStatus">Connecting to streaming…</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT: Citations Panel -->
+    <aside id="citationsPanel" class="rag-sidebar w-72 flex flex-col border-l border-border overflow-hidden">
+      <div class="p-4 border-b border-border">
+        <div class="flex items-center gap-2">
+          <i class="fas fa-quote-right text-cyan-400"></i>
+          <h2 class="text-sm font-semibold">Sources</h2>
+          <button onclick="toggleCitations()" class="ml-auto text-muted hover:text-foreground text-xs">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <div id="citationsList" class="flex-1 overflow-y-auto p-3 space-y-3">
+        <div class="text-xs text-muted italic text-center pt-4">Ask a question to see sources</div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Toast -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 space-y-2"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
