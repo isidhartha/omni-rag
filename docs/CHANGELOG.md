@@ -320,3 +320,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-18] refactor: simplify logic
 [2026-05-18] documentation cleanup
 [2026-05-18] removed magic numbers
+[2026-05-18] readme improvements
