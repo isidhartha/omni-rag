@@ -317,3 +317,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-17] clearer contributing guide
 [2026-05-17] removed unused dependencies
 [2026-05-18] connection pool sizing
+[2026-05-18] refactor: simplify logic
