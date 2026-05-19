@@ -323,3 +323,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-18] readme improvements
 [2026-05-19] response synthesis quality
 [2026-05-19] mocked external dependencies
+[2026-05-19] added code examples to docs
