@@ -119,6 +119,40 @@ WS   /ws/chat               — Streaming chat responses
 
 ---
 
+## Free local LLM option (no API key needed)
+
+OmniRAG supports [Ollama](https://ollama.com) as a drop-in alternative to OpenAI for chat and summarisation. This lets you run the LLM entirely on your own machine at no cost.
+
+**1. Install Ollama**
+
+Download and install from [https://ollama.com](https://ollama.com), then pull a model:
+
+```bash
+ollama pull llama3.2
+```
+
+**2. Start Ollama**
+
+```bash
+ollama serve
+```
+
+**3. Switch OmniRAG to Ollama**
+
+In your `.env` file, set:
+
+```
+LLM_PROVIDER=ollama
+OLLAMA_BASE_URL=http://localhost:11434
+OLLAMA_MODEL=llama3.2
+```
+
+That's it. Restart the backend and all chat and RAG responses will use your local model.
+
+**Note on embeddings:** Embeddings still require OpenAI (or the built-in `sentence-transformers` fallback) because Ollama's embedding API differs from the vector pipeline OmniRAG uses. You can run `LLM_PROVIDER=ollama` with an empty `OPENAI_API_KEY` as long as you have `sentence-transformers` installed — the embedding layer will fall back to the local `all-MiniLM-L6-v2` model automatically.
+
+---
+
 ## License
 
 MIT. Use it for whatever you need.
