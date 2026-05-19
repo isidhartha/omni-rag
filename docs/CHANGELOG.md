@@ -325,3 +325,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-19] mocked external dependencies
 [2026-05-19] added code examples to docs
 [2026-05-19] reranker model loading
+[2026-05-19] fixed broken link in readme
