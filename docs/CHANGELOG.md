@@ -234,96 +234,96 @@ Running log of changes. Most recent at the bottom.
 [2026-04-28] fix: race condition in handler
 [2026-04-28] query preprocessing
 [2026-04-29] fix: incorrect default value
-[2026-04-29] finally fixed that edge case
-[2026-04-29] fix: log level override not working
-[2026-04-29] fixed that null crash
-[2026-04-29] search result ranking
-[2026-04-29] added troubleshooting section
-[2026-04-29] fix: connection not closing properly
-[2026-04-30] header cleanup
-[2026-04-30] fix: missing return statement
-[2026-05-01] added edge case tests
-[2026-05-01] timeout tuning
-[2026-05-02] rough draft
-[2026-05-02] source citation format
-[2026-05-02] improved test assertions
-[2026-05-02] updated setup docs
-[2026-05-02] faster startup
-[2026-05-03] docs: note about environment variables
-[2026-05-03] chromadb connection pooling
-[2026-05-04] named the constants
-[2026-05-04] fixed timeout handling
-[2026-05-04] minor cleanup
-[2026-05-04] similarity threshold tuning
-[2026-05-04] resource limits
-[2026-05-04] chore: remove dead code
-[2026-05-05] sync with main
-[2026-05-05] graceful degradation
-[2026-05-05] improve readability
-[2026-05-06] text overlap handling
-[2026-05-06] image ocr improvement
-[2026-05-06] progress
-[2026-05-06] style: formatting
-[2026-05-06] cleanup
-[2026-05-07] document metadata extraction
-[2026-05-07] chore: standardize naming
-[2026-05-08] chore: remove unused imports
-[2026-05-08] reverted bad change
-[2026-05-08] readme cleanup
-[2026-05-08] removed old commented code
-[2026-05-08] test: better assertions
-[2026-05-08] cors fix
-[2026-05-10] fixed edge case in prod
-[2026-05-10] fixed outdated instructions
-[2026-05-10] minor tweaks
-[2026-05-10] fix: typo in error message
-[2026-05-10] style: consistent indentation
-[2026-05-10] polish
-[2026-05-11] chore: update license year
-[2026-05-11] graceful shutdown
-[2026-05-11] got it working
-[2026-05-11] reduced unnecessary work
-[2026-05-12] context window packing
-[2026-05-12] sensible defaults
-[2026-05-12] db index added
-[2026-05-12] input bounds check
-[2026-05-12] better variable names
-[2026-05-12] refactor: extract constants
-[2026-05-12] whitespace fix
-[2026-05-13] code review fixes
-[2026-05-13] rag pipeline logging
-[2026-05-13] docs: update changelog
-[2026-05-13] hotfix: bad default config
-[2026-05-13] cleaned up util functions
-[2026-05-14] merge fixes
-[2026-05-14] finishing up
-[2026-05-14] hotfix: null dereference
-[2026-05-14] it works now
-[2026-05-14] code cleanup
-[2026-05-15] fix: config values not loading
-[2026-05-15] streaming response fix
-[2026-05-15] regression test added
-[2026-05-15] test: fix flaky test
-[2026-05-15] embedding fallback to local
-[2026-05-15] test: add basic unit tests
-[2026-05-15] post merge cleanup
-[2026-05-16] updated changelog
-[2026-05-16] refactor: cleaner variable names
-[2026-05-16] chore: update dependencies
-[2026-05-16] cleaned up imports
-[2026-05-17] added missing docs
-[2026-05-17] fixed race condition in handler
-[2026-05-17] async fix
-[2026-05-17] clearer contributing guide
-[2026-05-17] removed unused dependencies
-[2026-05-18] connection pool sizing
-[2026-05-18] refactor: simplify logic
-[2026-05-18] documentation cleanup
-[2026-05-18] removed magic numbers
-[2026-05-18] readme improvements
-[2026-05-19] response synthesis quality
-[2026-05-19] mocked external dependencies
-[2026-05-19] added code examples to docs
-[2026-05-19] reranker model loading
-[2026-05-19] fixed broken link in readme
-[2026-05-19] cleanup and formatting
+[2026-04-29] another fix
+[2026-04-29] fix: logging config
+[2026-04-29] follow-up
+[2026-04-29] tidy
+[2026-04-29] troubleshooting docs
+[2026-04-29] fix: close connection
+[2026-04-30] missed this
+[2026-04-30] fix: add missing return
+[2026-05-01] test edge cases
+[2026-05-01] tweak
+[2026-05-02] scaffolding only
+[2026-05-02] maintenance
+[2026-05-02] missed this
+[2026-05-02] tidy
+[2026-05-02] one more thing
+[2026-05-03] env var docs
+[2026-05-03] small win
+[2026-05-04] name magic values
+[2026-05-04] catch-up
+[2026-05-04] small tidy
+[2026-05-04] misc tweaks
+[2026-05-04] quick pass
+[2026-05-04] remove stale code
+[2026-05-05] pull latest main
+[2026-05-05] degrade gracefully
+[2026-05-05] polish
+[2026-05-06] forgot this
+[2026-05-06] maintenance
+[2026-05-06] inching forward
+[2026-05-06] apply formatter
+[2026-05-06] sweep
+[2026-05-07] another fix
+[2026-05-07] consistent naming throughout
+[2026-05-08] prune imports
+[2026-05-08] undo bad change
+[2026-05-08] tidy up readme
+[2026-05-08] remove dead code
+[2026-05-08] improve test checks
+[2026-05-08] fix cors headers
+[2026-05-10] minor fix
+[2026-05-10] misc
+[2026-05-10] minor polish
+[2026-05-10] fix: message typo
+[2026-05-10] normalize indentation
+[2026-05-10] small improvement
+[2026-05-11] license header update
+[2026-05-11] clean shutdown
+[2026-05-11] that finally worked
+[2026-05-11] follow-up
+[2026-05-12] small win
+[2026-05-12] sane defaults
+[2026-05-12] index for hot query
+[2026-05-12] validate input range
+[2026-05-12] clearer names
+[2026-05-12] named constants
+[2026-05-12] tweak
+[2026-05-13] polish
+[2026-05-13] misc
+[2026-05-13] update change log
+[2026-05-13] one more thing
+[2026-05-13] utility cleanup
+[2026-05-14] fix merge issues
+[2026-05-14] last bits
+[2026-05-14] missed this
+[2026-05-14] that did it
+[2026-05-14] code health pass
+[2026-05-15] fix: config parsing issue
+[2026-05-15] one more thing
+[2026-05-15] another fix
+[2026-05-15] stabilize flaky test
+[2026-05-15] another fix
+[2026-05-15] basic test coverage
+[2026-05-15] cleanup after merge
+[2026-05-16] another fix
+[2026-05-16] better variable names
+[2026-05-16] bump minor deps
+[2026-05-16] import cleanup
+[2026-05-17] add missing documentation
+[2026-05-17] misc
+[2026-05-17] async bug
+[2026-05-17] improve contributor docs
+[2026-05-17] remove unneeded packages
+[2026-05-18] adjust pool size
+[2026-05-18] straighten out code
+[2026-05-18] quick pass
+[2026-05-18] use named constants
+[2026-05-18] polish readme
+[2026-05-19] housekeeping
+[2026-05-19] small improvement
+[2026-05-19] code examples in docs
+[2026-05-19] misc
+[2026-05-19] cleanup round 2
+[2026-05-19] tidy after review
