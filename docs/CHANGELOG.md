@@ -327,3 +327,4 @@ Running log of changes. Most recent at the bottom.
 [2026-05-19] reranker model loading
 [2026-05-19] fixed broken link in readme
 [2026-05-19] cleanup and formatting
+[2026-05-21] test: add regression test for concurrent upload handling
