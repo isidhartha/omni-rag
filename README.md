@@ -92,8 +92,6 @@ Go to `http://localhost:3000`. Drag a file into the upload area, wait a few seco
 
 ```bash
 # Backend
-
-[![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-rag)](https://github.com/isidhartha/omni-rag/discussions)
 cd backend
 python -m venv .venv
 source .venv/bin/activate    # Windows: .venv\Scripts\activate
@@ -101,8 +99,6 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 
 # Frontend
-
-[![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-rag)](https://github.com/isidhartha/omni-rag/discussions)
 cd frontend
 npm install
 npm run dev
