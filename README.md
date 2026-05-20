@@ -2,6 +2,17 @@
 
 [![Discussions](https://img.shields.io/github/discussions/isidhartha/omni-rag)](https://github.com/isidhartha/omni-rag/discussions)
 
+## Demo
+
+![Demo](docs/images/demo.gif)
+
+### Screenshots
+
+| Desktop | Feature View | Mobile |
+|---------|-------------|--------|
+| ![Desktop](docs/images/screenshot_desktop.png) | ![Feature](docs/images/screenshot_feature.png) | ![Mobile](docs/images/screenshot_mobile.png) |
+
+
 I got tired of the standard RAG demo that only works on one PDF and falls apart the moment you throw anything more complex at it. OmniRAG is what I built to fix that. It handles PDFs, images, codebases, audio, and video — all in the same pipeline. You upload your files, ask questions, and get answers with citations that tell you exactly where each piece of information came from.
 
 The part I spent the most time on is the search layer. Most RAG systems use pure vector search, which works okay but misses things that don't embed well — exact identifiers, code symbols, specific numbers. OmniRAG uses hybrid search: vector embeddings for semantic meaning and BM25 keyword search for precision. Then it reranks the results before passing them to the LLM. That combination gets you meaningfully better answers on real documents.
