@@ -4,12 +4,12 @@
 
 ## Demo
 
-![Demo](docs/images/demo.gif)
+![Demo Animation](docs/images/demo.gif)
 
 ### Screenshots
 
-| Desktop | Feature View | Mobile |
-|---------|-------------|--------|
+| Desktop Dashboard | Feature View | Mobile View |
+|------------------|--------------|--------------|
 | ![Desktop](docs/images/screenshot_desktop.png) | ![Feature](docs/images/screenshot_feature.png) | ![Mobile](docs/images/screenshot_mobile.png) |
 
 
@@ -127,7 +127,7 @@ WS   /ws/chat               — Streaming chat responses
 ## Configuration
 
 | Variable | Description | Default |
-|---|---|---|
+|------------------|--------------|--------------|
 | `OPENAI_API_KEY` | Required for embeddings and LLM responses | — |
 | `CHROMA_PERSIST_DIR` | Where ChromaDB stores its data | `/data/chroma` |
 | `CHUNK_SIZE` | Characters per chunk | `1000` |
