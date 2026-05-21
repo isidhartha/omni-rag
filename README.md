@@ -125,7 +125,7 @@ WS   /ws/chat               — Streaming chat responses
 | Variable | Description | Default |
 |------------------|--------------|--------------|
 | `OPENAI_API_KEY` | Required for embeddings and LLM responses | — |
-| `CHROMA_PERSIST_DIR` | Where ChromaDB stores its data | `/data/chroma` |
+| `CHROMA_PERSIST_DIR` | Where [ChromaDB](https://docs.trychroma.com/docs/overview/introduction) stores its data | `/data/chroma` |
 | `CHUNK_SIZE` | Characters per chunk | `1000` |
 | `CHUNK_OVERLAP` | Overlap between chunks | `200` |
 | `TOP_K_RESULTS` | How many chunks to retrieve per query | `5` |
